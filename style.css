@@ -10,7 +10,7 @@
     padding: 5%;
     border-color: solid black 2px;
     display: inline-block;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 #grey {
