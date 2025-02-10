@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-
+    <title>Color Switcher</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="canvas"> 
-        <h1 class="title">Color Scheme Switcher</h1>
-
-        <div class="button">
-            <button class="color" id="grey"></button>
-            <button class="color" id = "white"></button>
-            <button class="color" id = "blue"></button>
-            <button class="color" id = "yellow"></button>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+    <div class="container">
+        <h1>Color Switcher</h1>
+        <div class="color-buttons">
+            <button class="color-btn" style="background: red;" onclick="changeColor('Red')">Red</button>
+            <button class="color-btn" style="background: blue;" onclick="changeColor('Blue')">Blue</button>
+            <button class="color-btn" style="background: green;" onclick="changeColor('Green')">Green</button>
+            <!-- <button class="color-btn" style="background: yellow; color: black;" onclick="changeColor('Yellow')">Yellow</button> -->
+            <button class="color-btn" style="background: purple;" onclick="changeColor('Purple')">Purple</button>
+            <button class="random-btn" onclick="randomColor()">Random</button>
+            <div class="save-container">
+                <button class="save-btn" onclick="saveColor()">Save</button>
+                <span class="badge" id="favCount">0</span>
+            </div>
+            <input type="color" id="colorPicker" onchange="changeColor(this.value)">
         </div>
-        <div class="text">Try clicking on one of the colors above to change the background color of the page!</div>
+        <p id="colorCode">Current Color: White</p>
+        <h3>Saved Colors:</h3>
+        <div id="savedColors"></div>
     </div>
     
-    <!-- JS added -->
-     <script src="./index.js"></script>
+    <!--Js Link -->
+    <script src="/index.js"></script>
 </body>
 </html>
