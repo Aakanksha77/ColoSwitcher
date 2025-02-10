@@ -1,36 +1,141 @@
-.canvas {
-    margin: 100px auto 100px;
-    width: 80%;
+body {
     text-align: center;
+    transition: background 1s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: white;
 }
 
-.color{
-    width: 10%;
-    height: 50%;
-    padding: 5%;
-    border-color: solid black 2px;
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+}
+
+.color-buttons {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color-btn {
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.random-btn {
+    background: #ff5733;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 14px 20px;
+}
+
+.save-btn {
+    background: #16a085;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 14px 22px;
+}
+
+.color-btn:hover,
+.random-btn:hover,
+.save-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#colorPicker {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Remove default color picker style for WebKit browsers */
+#colorPicker::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+#colorPicker::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+
+#colorCode {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.theme-toggle {
+    margin-bottom: 15px;
+    padding: 12px;
+    background: black;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: #444;
+    transform: scale(1.1);
+}
+
+.save-container {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 14px;
+    border-radius: 50%;
+    padding: 5px 8px;
+}
+
+.saved-color {
     display: inline-block;
-    /* cursor: pointer; */
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
-#grey {
-    background-color: gray;
-}
-
-#white {
-    background-color: white;
-}
-
-#blue {
-    background-color: blue;
-}
-
-#yellow {
-    background-color: yellow;
-}
-
-.text{
-    color:  black;
-    font-size: 25px;
-    font-weight: 900;
+.saved-color:hover {
+    transform: rotate(360deg) scale(1.1);
 }
