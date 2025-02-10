@@ -1,4 +1,3 @@
-
 let savedColorsCount = 0;
 
 function changeColor(color) {
