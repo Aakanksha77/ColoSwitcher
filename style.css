@@ -81,6 +81,7 @@ body {
 #colorPicker::-webkit-color-swatch-wrapper {
     padding: 0;
 }
+
 #colorPicker::-webkit-color-swatch {
     border: none;
     border-radius: 50%;
