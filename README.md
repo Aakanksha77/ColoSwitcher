@@ -6,7 +6,6 @@
 
 ## 🌟 Live Demo  
 Check out the magic in action: [Live Demo](https://aakanksha77.github.io/ColoSwitcher/) 
-*(Replace with the actual URL once hosted)*  
 
 ---
 
