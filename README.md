@@ -1,4 +1,4 @@
-# 🎨 ColoSwitcher  
+# 🎨 ColorSwitcher  
 
 **ColoSwitcher** is a fun and interactive web app that lets you switch background colors with a single click! Perfect for anyone wanting to play around with color schemes or learn the basics of JavaScript DOM manipulation.  
 
